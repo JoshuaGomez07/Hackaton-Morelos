@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedVital Registro de Donante</title>
+    <link href="style.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8; /* Color de fondo suave */
+            color: #333; /* Color de texto principal */
+        }
+
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff; /* Color de fondo del formulario */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    
+        }
+
+
+        input[type="text"],
+        input[type="email"],
+        input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc; /* Borde gris */
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+
+        input[type="submit"] {
+            background-color: #872ecc; /* Verde saludable */
+            color: #fff; /* Texto en color blanco */
+            cursor: pointer;
+        }
+
+
+        input[type="submit"]:hover {
+            background-color: #7127ae; /* Verde oscuro */
+        }
+        input[type="button"] {
+            background-color: #872ecc; /* Verde saludable */
+            color: #fff; /* Texto en color blanco */
+            cursor: pointer;
+        }
+
+
+        input[type="button"]:hover {
+            background-color: #7127ae; /* Verde oscuro */
+        }
+    </style>
+</head>
+<title>Registro de Donante</title>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img id="logo"src="img/logo.png" alt=""></a>
+    <h1></h1>
+</header>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="requisitos.html">Requisitos</a>
+    <a href="formularioDonante.html">Donar</a>
+    <a href="solicitud.html">Solicitar donacion</a>
+  </nav>
+  <div>
+    <form id="registroForm">
+      <h2>Registro de Donante</h2>
+      <label for="pregunta1">¿Has estado enfermo de gripe, tos, diarrea o infección dental en los últimos 14 días?</label><br>
+      <input type="radio" id="si1" name="enfermo" value="Si">
+      <label for="si1">Sí</label>
+      <input type="radio" id="no1" name="enfermo" value="No">
+      <label for="no1">No</label><br>
+
+      <label for="pregunta2">¿Has tomado medicamentos en los últimos cinco días?</label><br>
+      <input type="radio" id="si2" name="medicamentos" value="Si">
+      <label for="si2">Sí</label>
+      <input type="radio" id="no2" name="medicamentos" value="No">
+      <label for="no2">No</label><br>
+
+      <label for="pregunta3">¿Has estado en tratamiento de endodoncia, acupuntura o te has practicado tatuajes o perforaciones en los últimos 12 meses?</label><br>
+      <input type="radio" id="si3" name="tratamiento" value="Si">
+      <label for="si3">Sí</label>
+      <input type="radio" id="no3" name="tratamiento" value="No">
+      <label for="no3">No</label><br>
+
+      <label for="pregunta4">¿Has sido operado en los últimos seis meses?</label><br>
+      <input type="radio" id="si4" name="operado" value="Si">
+      <label for="si4">Sí</label>
+      <input type="radio" id="no4" name="operado" value="No">
+      <label for="no4">No</label><br>
+
+      <label for="pregunta5">¿Te has vacunado en los últimos 30 días?</label><br>
+      <input type="radio" id="si5" name="vacunado" value="Si">
+      <label for="si5">Sí</label>
+      <input type="radio" id="no5" name="vacunado" value="No">
+      <label for="no5">No</label><br>
+
+      <label for="pregunta6">¿Has ingerido bebidas alcohólicas en las últimas 72 horas?</label><br>
+      <input type="radio" id="si6" name="alcohol" value="Si">
+      <label for="si6">Sí</label>
+      <input type="radio" id="no6" name="alcohol" value="No">
+      <label for="no6">No</label><br>
+
+      <input type="button" value="Enviar" onclick="validarFormulario()">
+      <p id="mensajeError"></p>
+    </form>
+  </div>
+
+  <script>
+    function validarFormulario() {
+      const radios = document.querySelectorAll('input[type="radio"]:checked');
+      let hayRespuestaSi = false;
+
+      radios.forEach(radio => {
+        if (radio.value === 'Si') {
+          hayRespuestaSi = true;
+        }
+      });
+
+      if (hayRespuestaSi) {
+        document.getElementById('mensajeError').textContent = 'No puedes donar sangre si has respondido "Sí" a alguna de las preguntas.';
+      } else {
+        // Aquí puedes realizar la lógica para enviar el formulario
+        alert('Formulario enviado correctamente.');
+      }
+    }
+  </script>
+            
+    
+    
+           
+    
+    
+           
+        </form>
+    </container>
+    
+</body>
+</html>

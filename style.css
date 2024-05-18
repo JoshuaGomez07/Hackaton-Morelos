@@ -1,0 +1,95 @@
+
+/*Segunda parte*/
+
+
+header {
+    background-color: #872ecc; 
+    padding: 40px;
+    text-align: center;
+    color: #fff; 
+    position: relative;
+}
+
+nav {
+    background-color: #7127ae; 
+    padding: 10px;
+    text-align: center;
+    color: #fff; 
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+    
+main {
+    padding: 20px;
+    position: relative;
+}
+
+#contenedor {
+    width: 100%;
+    height: 500px;
+    background-image: url('https://th.bing.com/th/id/R.d817d19478663ad901642fd285d0461d?rik=eRWnQ4Rx2EmiWg&riu=http%3a%2f%2fwww.radiohouse.hn%2fwp-content%2fuploads%2f2016%2f11%2fVisitan_hospital21.jpg&ehk=3Pi9D1r5fSzdF1QQuS%2befvO9i0VfOvp5vM53Wx2a2Mk%3d&risl=&pid=ImgRaw&r=0'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+footer
+    {
+    background-color: #ad4eed; 
+    color: #fff; 
+    padding:5px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+header img {
+    position: absolute;
+    top: 50%; 
+    left: 5%; 
+    transform: translateY(-50%); 
+    width: 20%;
+    height: auto; 
+}
+
+svg {
+    width: 100%; 
+    max-width: 1500px; 
+    height: auto; 
+}
+
+  path {
+    fill: #f0f0f0; 
+    stroke: #fff; 
+    stroke-width: 1; 
+  }
+  path:hover {
+    fill: #ccc; 
+  }
+
+  .boton {
+    font-size: 15px; /* Tamaño de fuente */
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #ad4eed; /* Color de fondo morado */
+    color: #fff; /* Color de texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero al pasar por encima */
+  }
+  
+  .boton:hover {
+    background-color: #7b2cbf; /* Cambio de color al pasar el cursor */
+  }
+
+p {
+    font-size: 18px; /* Tamaño de fuente adecuado */
+    line-height: 1.5; /* Espaciado entre líneas */
+    margin-bottom: 20px; /* Espaciado entre párrafos */
+  }
