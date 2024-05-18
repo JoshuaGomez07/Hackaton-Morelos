@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Página Principal - Salud</title>
+    <style>
+    
+    header {
+        background-color: #872ecc; /* Verde saludable */
+        padding: 20px;
+        text-align: center;
+        color: #fff; /* Texto en color blanco */
+    }
+    
+    nav {
+        background-color: #7127ae; /* Verde oscuro saludable */
+        padding: 10px;
+        text-align: center;
+        color: #fff; /* Texto en color blanco */
+    }
+    
+    nav a {
+        color: #fff; /* Texto de enlace en color blanco */
+        text-decoration: none;
+        margin: 0 10px;
+    }
+        
+    main {
+        padding: 20px;
+        position: relative; /* Para que el pseudo-elemento se posicione correctamente */
+    }
+
+    #contenedor {
+            width: 100%;
+            height: 500px;
+            background-image: url('https://th.bing.com/th/id/R.d817d19478663ad901642fd285d0461d?rik=eRWnQ4Rx2EmiWg&riu=http%3a%2f%2fwww.radiohouse.hn%2fwp-content%2fuploads%2f2016%2f11%2fVisitan_hospital21.jpg&ehk=3Pi9D1r5fSzdF1QQuS%2befvO9i0VfOvp5vM53Wx2a2Mk%3d&risl=&pid=ImgRaw&r=0'); /* Ruta de la imagen de fondo */
+            background-size: cover; /* Cubre todo el contenedor */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+        }
+
+    footer
+        {
+        background-color: #ad4eed; /* Azul oscuro */
+        color: #fff; /* Texto en color blanco */
+        padding:0px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Nuestra Página de Salud</h1>
+    </header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Artículos</a>
+        <a href="#">Contactos</a>
+    </nav>
+    <main>
+        <div id="contenedor">
+         
+            <button class="solicitar-donacion">Solicitar Donación</button>
+            <button class="ser-donante">Convertirse en Donante</button>
+            <form action="solicitarDonacion.html" method="get"><input type="submit" value="Solicitar" ></form>
+            <form action="formularioDonante.html" method="get"><input type="submit" value="Donar" ></form>
+        </div>
+        </div>
+        <h2>Nuestros Servicios</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus eros vitae magna ultricies, vitae posuere nunc pellentesque.</p>
+        <h2>Artículos Recientes</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus eros vitae magna ultricies, vitae posuere nunc pellentesque.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 RedVital - Asociacion sin fines de lucro todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
