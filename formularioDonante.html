@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Donante</title>
+    <link href="style.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8; /* Color de fondo suave */
+            color: #333; /* Color de texto principal */
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff; /* Color de fondo del formulario */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc; /* Borde gris */
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #872ecc; /* Verde saludable */
+            color: #fff; /* Texto en color blanco */
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #7127ae; /* Verde oscuro */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img id="logo"src="img/logo.png" alt=""></a>
+        <h1></h1>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Artículos</a>
+        <a href="#">Contactos</a>
+    </nav>
+    <form action="insertarDonador.php" method="POST">
+        <h2>Registro de Donante</h2>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="18" max="100" required>
+
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero" required>
+            <option value="">Selecciona tu género</option>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select>
+        <br><br>
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono">
+        
+        <label for="tipo_sangre">Tipo de Sangre:</label>
+        <select id="tipo_sangre" name="tipo_sangre">
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+        </select>
+
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" name="comentarios"></textarea>
+
+        <input type="submit" value="Registrarse">
+    </form>
+    <footer>
+        <p>&copy; 2024 RedVital - Asociacion sin fines de lucro todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
